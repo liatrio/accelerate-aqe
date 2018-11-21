@@ -30,7 +30,7 @@
 			<version>4.12</version>
 		</dependency>
 
-		<!-- These are the selenium-webdriver dependencies -->	
+		<!-- These are the selenium-webdriver dependencies -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -54,14 +54,7 @@
 		</dependency>
 
 		<!-- These are the selenium-cucumber methods dependencies -->
-		<dependency>
-			<groupId>sample</groupId>
-			<artifactId>com.sample</artifactId>
-			<version>1.0.0</version>
-			<type>jar</type>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/selenium-cucumber-methods-1.0.0.jar</systemPath>
-		</dependency>  
+
 
 		<dependency>
 			<groupId>com.google.guava</groupId>
