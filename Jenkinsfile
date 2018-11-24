@@ -3,7 +3,7 @@ library 'pipeline-library'
 pipeline {
     agent any
     environment {
-        APP_NAME = "aalsabag"
+        APP_NAME = "accelerate-aqe"
         PROJECT_KEY = "AALS"
         DEMO_APP_PATH = "accelerate-aqe"
         IMAGE = "${APP_NAME}-demo"
