@@ -21,6 +21,14 @@ Download a Framework
 --------------
 * Maven - https://github.com/selenium-cucumber/selenium-cucumber-java-maven-example
 
+Download a Driver
+--------------
+* The chromedriver is commonly used, but be sure to select the correct architecture!
+https://chromedriver.storage.googleapis.com/index.html?path=2.44/
+The driver must be added to your path.
+Later be sure to run your mvn test with a flag indicating your driver: "-Dbrowser=chrome"
+
+
 Writing a test
 --------------
 
@@ -66,12 +74,6 @@ import cucumber.api.junit.Cucumber;
 public class RunCukeTest {
 }
 ```
-
-Maven/Gradle Dependency
------------------------
-
-See https://jitpack.io/#selenium-cucumber/selenium-cucumber-java .
-
 License
 -------
 
