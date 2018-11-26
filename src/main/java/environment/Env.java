@@ -44,7 +44,7 @@ public class Env
 				System.exit(0);
 			}
 		}else if(browserName == null)
-			browserName = "ff";
+			browserName = "ch";
 		return browserName;
 	}
 	
