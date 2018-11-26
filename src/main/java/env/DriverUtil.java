@@ -53,7 +53,19 @@ public class DriverUtil {
 		boolean headless = System.getProperty("Headless", "true").equals("true");
 		
 		switch (preferredDriver.toLowerCase()) {
-			case "chrome":
+			case "ff":
+				//return new PhantomJSDriver(capabilities);
+				FirefoxOptions options = new FirefoxOptions();
+				//capabilities.s
+				if (headless) {
+					options.addArguments("-headless", "-safe-mode");
+				}
+				capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
+				final FirefoxDriver firefox = new FirefoxDriver();
+				return firefox;
+			case "phantomjs":
+				return new PhantomJSDriver(capabilities);
+			default:
 				final ChromeOptions chromeOptions = new ChromeOptions();
 				if (headless) {
 					chromeOptions.addArguments("--headless");
@@ -66,18 +78,6 @@ public class DriverUtil {
 				handler.setIncludeServerErrors(false);
 				driver.setErrorHandler(handler);
 				return driver;
-			case "phantomjs":
-				return new PhantomJSDriver(capabilities);
-			default:
-				//return new PhantomJSDriver(capabilities);
-				FirefoxOptions options = new FirefoxOptions();
-				//capabilities.s
-				if (headless) {
-					options.addArguments("-headless", "-safe-mode");
-				}
-				capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
-				final FirefoxDriver firefox = new FirefoxDriver();
-				return firefox;
 		}
     }
 
