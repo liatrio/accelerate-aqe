@@ -33,4 +33,3 @@ target/**
 # Gradle
 .gradle
 /build/
-gradle/wrapper/**
