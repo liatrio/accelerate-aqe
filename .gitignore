@@ -29,3 +29,7 @@ target/**
 
 # OSX Files
 .DS_Store
+
+# Gradle
+.gradle
+/build/
