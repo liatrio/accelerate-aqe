@@ -8,7 +8,16 @@
 	<packaging>jar</packaging>
 	<name>accelerate-aqe</name>
 
-	<dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.version>3.6.0</maven.compiler.version>
+        <karate.version>0.9.0</karate.version>
+    </properties>
+
+    <dependencies>
+
+
 		<!-- These are the cucumber dependencies -->
 		<dependency>
 			<groupId>info.cukes</groupId>
@@ -23,12 +32,26 @@
 			<version>1.2.5</version>
 		</dependency>
 
-		<!-- These are the junit dependencies -->
+        <!-- These are the junit dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+
+        <!-- These are the karate dependencies -->
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit4</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>
 
 		<!-- These are the selenium-webdriver dependencies -->
 		<dependency>
