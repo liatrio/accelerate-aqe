@@ -1,8 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-group = 'accelerate'
-version = '0.1.3'
+group = 'com.liatrio.accelerate'
+version = '0.0.1-SNAPSHOT'
 
 description = """accelerate-aqe"""
 
