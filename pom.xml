@@ -32,26 +32,26 @@
 			<version>1.2.5</version>
 		</dependency>
 
-        <!-- These are the junit dependencies -->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
 
-        <!-- These are the karate dependencies -->
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-apache</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-junit4</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>
+        	<!-- These are the karate dependencies (ordering here matters) -->
+        	<dependency>
+            		<groupId>com.intuit.karate</groupId>
+            		<artifactId>karate-apache</artifactId>
+            		<version>${karate.version}</version>
+            		<scope>test</scope>
+        		</dependency>
+		<dependency>
+		    	<groupId>com.intuit.karate</groupId>
+		    	<artifactId>karate-junit4</artifactId>
+		    	<version>${karate.version}</version>
+		    	<scope>test</scope>
+		</dependency>
 
 		<!-- These are the selenium-webdriver dependencies -->
 		<dependency>
