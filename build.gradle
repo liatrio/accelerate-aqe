@@ -4,7 +4,7 @@ apply plugin: 'maven'
 group = 'com.liatrio.accelerate'
 version = '0.0.1-SNAPSHOT'
 
-description = """accelerate-aqe"""
+description = 'accelerate-aqe'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
