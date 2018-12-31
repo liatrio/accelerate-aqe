@@ -33,3 +33,6 @@ target/**
 # Gradle
 .gradle
 /build/
+
+# Ignore intellij
+*.iml
