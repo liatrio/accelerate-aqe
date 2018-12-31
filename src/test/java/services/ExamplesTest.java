@@ -1,4 +1,4 @@
-package examples;
+package services;
 
 import com.intuit.karate.junit4.Karate;
 import org.junit.runner.RunWith;
